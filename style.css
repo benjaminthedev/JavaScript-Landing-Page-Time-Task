@@ -11,11 +11,22 @@
 body{
     font-family: 'Playfair Display SC', serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     text-align:center;
+    align-items: center;
     height: 100vh;
-    color: #000;
+    background-size: cover;
+}
+
+#wrap{
+    background-color:rgba(0, 0, 0, 0.70);
+    color:#fff;
+    border-radius:8px;    
+    width:50%;
+    -webkit-box-shadow: 10px 10px 33px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 33px -19px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 33px -19px rgba(0,0,0,0.75);    
 }
 
 #time{
