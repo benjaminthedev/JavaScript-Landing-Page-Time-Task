@@ -43,19 +43,29 @@ function setBackgroundGreeting() {
 
     if (hour < 12) {
         //Morn
-        document.body.style.backgroundImage = "";
-        greeting.textContent = "Good Morning"
+        document.body.style.backgroundImage = "url('../img/morning.jpg')";
+        greeting.textContent = "Good Morning";
+        document.body.style.colour = 'yellow ';
     } else if (hour < 18) {
         //Afternoon
-        document.body.style.backgroundImage = "";
-        greeting.textContent = "Good Afternoon"
+        document.body.style.backgroundImage = "url('../img/bike1.jpeg')";
+        greeting.textContent = "Good Afternoon";
     } else {
         //Evening
-        document.body.style.backgroundImage = "";
-        greeting.textContent = "Good Evening"
+        document.body.style.backgroundImage = "url('../img/evening.jpeg')";
+        greeting.textContent = "Good Evening";
+        document.body.style.color = 'green';
     }
 }
 
+//Get Name
+function getName() {
+    if (localStorage.getItem('name') === null) {
+        name.textContent = ['Enter Name Here'];
+    }
+}
 
 // Run
 showTime();
+setBackgroundGreeting();
+getName();
